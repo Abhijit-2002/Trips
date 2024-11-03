@@ -1,6 +1,6 @@
 import React from "react";
 // import { Button } from "./components/ui/button.jsx";
-import { Button } from "./ui/button.jsx";
+// import { Button } from "./ui/button.jsx";
 
 const menuItems = [
   {
@@ -41,7 +41,7 @@ const Header = () => {
             </ul>
           </div>
           <div>
-            <Button>Sign In </Button>
+           <button className=" px-4 py-2 text-white bg-teal-600 hover:bg-blue-400 rounded-md transition duration-300">Sign In</button>
           </div>
         </div>
       </div>
