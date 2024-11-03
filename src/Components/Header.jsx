@@ -1,6 +1,6 @@
 import React from "react";
 // import { Button } from "./components/ui/button.jsx";
-import { Button } from "./ui/button";
+import { Button } from "./ui/button.jsx";
 
 const menuItems = [
   {
