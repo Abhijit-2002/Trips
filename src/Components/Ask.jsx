@@ -102,10 +102,10 @@ const Ask = () => {
   };
 
   const handleFetchRecommendation = async () => {
-    // if (!city.trim()) {
-    //   toast.error("Please enter a city.");
-    //   return; // Prevent further action if the input is blank
-    // }
+    if (!city.trim()) {
+      toast.error("Please enter a city.");
+      return; // Prevent further action if the input is blank
+    }
     // if (!days.trim()) {
     //   toast.error("Please enter no of days more than 0");
     //   return; // Prevent further action if the input is blank
@@ -237,7 +237,7 @@ const Ask = () => {
                     }
                     className={`p-4 cursor-pointer border rounded-md bg-white shadow transition ease-in-out delay-150 hover:shadow-lg hover:shadow-slate-800 ${
                       formData.traveler === option.people
-                        ? "border-black  bg-green-200"
+                        ? "border-black  bg-green-300"
                         : "border-gray-300"
                     }`}
                   >
@@ -295,7 +295,7 @@ const Ask = () => {
                     onClick={() => handleBudgetChange("budget", option.title)}
                     className={`p-4 cursor-pointer border rounded-md bg-white shadow transition ease-in-out delay-150 hover:shadow-lg hover:shadow-slate-800 ${
                       formData.budget === option.title
-                        ? "border-black bg-green-200"
+                        ? "border-black bg-green-300"
                         : "border-gray-300"
                     }`}
                   >
@@ -343,7 +343,7 @@ const Ask = () => {
                     onClick={() => option.value && setMood(option.value)}
                     className={`p-4 cursor-pointer border rounded-md bg-white shadow transition ease-in-out delay-150 hover:shadow-lg hover:shadow-slate-800 ${
                       mood === option.value
-                        ? "border-black bg-green-200"
+                        ? "border-black bg-green-300"
                         : "border-gray-300"
                     }`}
                   >
